@@ -18,27 +18,6 @@
       background-position: center;
       overflow-x: hidden;
     }
-  
-    @media (max-width: 1024px) {
-      /* Estilos para telas menores ou iguais a 1024px com quatro colunas */
-      .media {
-        width: calc(25% - 20px);
-      }
-    }
-
-    @media (max-width: 768px) {
-      /* Estilos para telas menores ou iguais a 768px com três colunas */
-      .media {
-        width: calc(33.33% - 20px);
-      }
-    }
-
-    @media (max-width: 480px) {
-      /* Estilos para telas menores ou iguais a 480px com duas colunas */
-      .media {
-        width: calc(50% - 20px);
-      }
-    }
      
     header {
       background-color: rgba(0, 0, 0, 0.95);
@@ -47,6 +26,8 @@
       color: white;
       text-align: center;
       padding: 20px; 
+      position: inline-block;
+      
     }
 
     .logo {
@@ -56,36 +37,22 @@
       text-transform: uppercase;
       color: green;
     }
-
+ 
 section {
-  display: flex;
-  justify-content: center;
   text-align: center;
   align-items: center;
-  flex-direction: column;
-  margin-top: 50px; /* Adjust as needed */
-  margin-bottom: 50px; /* Adjust as needed */
+  overflow-x: hidden;
 }
 
    .media {
-  width: 800px;
-  height: 400px;
-  margin: 30px auto;
+  width: 100%;
+  height: 40%;
   box-sizing: border-box;
   cursor: pointer;
   text-align: center;
-  border-radius: 40px; /* Adjust the value as needed */
-  overflow: hidden; /* Ensure the rounded corners are applied */
+  border-radius: 40px; 
 }
 
-
-/* Adicione uma regra de mídia para ajustar o estilo para telas menores */
-@media only screen and (max-width: 600px) {
-  .media {
-    border-radius: 10px; /* Ajusta o raio da borda para telas menores */
-    margin: 15px auto; /* Ajusta a margem para telas menores */
-  }
-}
     .container {
       text-align: center;
     }
@@ -238,17 +205,6 @@ section {
 <div class="container">
   <a href="https://pt.org.br/" class="green-button">Planilhas</a>
 </div>
-
-
-<script>
-  function showImage(imageUrl) {
-    var img = new Image();
-    img.src = imageUrl;
-    img.style.maxWidth = 'auto';
-    img.style.height = 'auto';
-    document.body.appendChild(img);
-  }
-</script>
 
 <footer>
   <p>Copyright © 2024</p>
