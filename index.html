@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" type="image/png" href="https://assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=1000/fRt4sw0qezOyfuU/Ideias-20230427_110514_5f6025afd15b42deabd305a3f9352375.jpg">
+  <title>LUCFLIX</title>
+
+   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      color: white;
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 1)), url('https://images.unsplash.com/photo-1640340434855-6084b1f4901c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-position: center;
+      /* overflow-x: hidden; */
+    }
+
+    @media (max-width: 720px) {
+      body {
+        background-image: url('https://images.unsplash.com/photo-1640340434855-6084b1f4901c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      }
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.95);
+      backdrop-filter: blur(2px);
+      width: 97%;
+      color: white;
+      text-align: center;
+      padding: 20px; 
+      position: relative;
+    }
+
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: green;
+    }
+
+section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px; /* Adjust as needed */
+  margin-bottom: 50px; /* Adjust as needed */
+}
+
+   .media {
+  width: 800px;
+  height: 400px;
+  margin: 30px auto;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 40px; /* Adjust the value as needed */
+  overflow: hidden; /* Ensure the rounded corners are applied */
+}
+
+
+    .container {
+      text-align: center;
+    }
+
+    .green-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 50px;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.95);
+      backdrop-filter: blur(2px);
+      width: 97%;
+      color: white;
+      text-align: center;
+      padding: 20px; 
+      position: relative;
+      margin-top: 25px;
+    }
+
+    footer p {
+      margin: 9px 0; /* Adiciona um pequeno espaçamento entre os parágrafos */
+    }
+
+    ul {
+      list-style: none;
+      padding: 7px;
+      margin: 0;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    a {
+      color: white;
+      background-color: black;
+      border-radius: 50%;
+      padding: 10px;
+      text-decoration: none;
+    }
+
+    .image-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-container img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Curso Binárias</div>
+  <h2>Hora do lucro imensurável!</h2>
+</header>
+
+<section>
+  <div onclick="showImage('https://img.freepik.com/premium-photo/investing-forex-market-growth-concept-with-digital-rising-financial-chart-candlestick-graphs-stock-market-indicators-background-3d-rendering_670147-21289.jpg?w=1060')">
+    <h3>Aula 1</h3>
+    <p>Description of File 1</p>
+    <iframe class="media" src="https://drive.google.com/file/d/1vRcwqyMWUjRL7QG5Zq5HMC6WlLLx6zPC/preview" frameborder="0"></iframe>
+  </div>
+  <div onclick="showImage('https://img.freepik.com/free-photo/beautiful-cryptocurrwncy-concept_23-2149250205.jpg?t=st=1709839211~exp=1709842811~hmac=fa1684a380902875ea4eb7e5628d40ed3f219af3b2be36005e4e24aa830e45ac&w=996')">
+    <h3>Aula 2</h3>
+    <p>Description of File 2</p>
+    <iframe class="media" src="https://drive.google.com/file/d/1FZ6hf_O6TifGs3Xm0m9DV6yi4UBvw7xw/preview" frameborder="0"></iframe>
+  </div>
+  <div onclick="showImage('https://img.freepik.com/free-photo/cryptocurrency-bitcoin-ethereum-blockchain-concept_104785-13730.jpg?size=626&ext=jpg')">
+    <h3>Aula 3</h3>
+    <p>Description of File 3</p>
+    <iframe class="media" src="https://drive.google.com/file/d/16Qrub9ELt0n_SzVeo4E6onHVVB1Lepep/preview" frameborder="0"></iframe>
+  </div>
+  <div class="more-files">
+    <div>
+      <h3>Aula 4</h3>
+      <p>Description of File 4</p>
+      <iframe class="media" src="https://drive.google.com/file/d/1pARpUK4ojxq_wXnOgB7sEBbAOw1AuTVK/preview" frameborder="0"></iframe>
+    </div>
+    <div>
+      <h3>Aula 5</h3>
+      <p>Description of File 5</p>
+      <iframe class="media" src="https://drive.google.com/file/d/11UuBrfCaW9pnu3JviVLWV_LZAeffWqL2/preview" frameborder="0"></iframe>
+    </div>
+    <div>
+      <h3>Aula 6</h3>
+      <p>Description of File 6</p>
+      <iframe class="media" src="https://drive.google.com/file/d/1FFuv-bMQYg0NyLsyUT05LIp7x6h-m41s/preview" frameborder="0"></iframe>
+    </div>
+    <div>
+      <h3>Aula 7</h3>
+      <p>Description of File 7</p>
+      <iframe class="media" src="https://drive.google.com/file/d/1An-tc7jrAYjThrUTqe89FRxnC7IUrCr2/preview" frameborder="0"></iframe>
+    </div>
+    <div>
+      <h3>Aula 8</h3>
+      <p>Description of File 8</p>
+      <iframe class="media" src="https://drive.google.com/file/d/1CDkmtjThT6wheAAf3RgEbhZYfDXD7ESW/preview" frameborder="0"></iframe>
+    </div>
+    <div>
+      <h3>Aula 9</h3>
+      <p>Description of File 9</p>
+      <iframe class="media" src="https://drive.google.com/file/d/1ZUdqZ1HFVBOTRnkrfv4LM9WBOhNORdIJ/preview" frameborder="0"></iframe>
+    </div>
+    <div>
+      <h3>Aula 10</h3>
+      <p>Description of File 10</p>
+      <iframe class="media" src="https://drive.google.com/file/d/17uoRn7KJmYphZHH3C0fKblV4yEm9dV4a/preview" frameborder="0"></iframe>
+    </div>
+    <div>
+      <h3>Aula 11</h3>
+      <p>Description of File 11</p>
+      <iframe class="media" src="https://drive.google.com/file/d/124Qp9BoRXmzGItMRg-wy_o_AOSXNb3-t/preview" frameborder="0"></iframe>
+    </div>
+    <div>
+      <h3>Aula 12</h3>
+      <p>Description of File 12</p>
+      <iframe class="media" src="https://drive.google.com/file/d/16ZobG-zQ1qXxMBc9-oWSa-M5qUV_2ag7/preview" frameborder="0"></iframe>
+    </div>
+    <div>
+      <h3>Aula 13</h3>
+      <p>Description of File 13</p>
+      <iframe class="media" src="https://drive.google.com/file/d/1l--k0Q82as-xjD2WFYwTfZmlry7ab2tE/preview" frameborder="0"></iframe>
+    </div>
+    <div>
+      <h3>Aula 14</h3>
+      <p>Description of File 14</p>
+      <iframe class="media" src="https://drive.google.com/file/d/1AWIDaMSYAFm0XMPbc5zHaXaVMpQhr0h_/preview" frameborder="0"></iframe>
+    </div>
+    <div>
+      <h3>Aula 15</h3>
+      <p>Description of File 15</p>
+      <iframe class="media" src="https://drive.google.com/file/d/1WJq0X5GNhCqscDCWNSQue7KKEnhSrSsH/preview" frameborder="0"></iframe>
+    </div>
+    <div>
+      <h3>Aula 16</h3>
+      <p>Description of File 16</p>
+      <iframe class="media" src="https://drive.google.com/file/d/19irxlNLkC1me5VJhDldnz4Dzb4Wal7oS/preview" frameborder="0"></iframe>
+    </div>
+    <div>
+      <h3>Aula 17</h3>
+      <p>Description of File 17</p>
+      <iframe class="media" src="https://drive.google.com/file/d/1Y2Mgm1LC3wqxD8i1EbgUHdMS1-pqMDRQ/preview" frameborder="0"></iframe>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <a href="https://www.xvideos.com" class="green-button">Planilhas</a>
+</div>
+
+
+<script>
+  function showImage(imageUrl) {
+    var img = new Image();
+    img.src = imageUrl;
+    img.style.maxWidth = '100%';
+    img.style.height = 'auto';
+    document.body.appendChild(img);
+  }
+</script>
+
+<footer>
+  <p>Copyright © 2024</p>
+  <p>Desenvolvido por Lucas Nathan</p>
+  <ul>
+    <li><a href="https://wa.me/557192920032" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+    <li><a href="https://www.instagram.com/071lkz/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="https://www.facebook.com/lucas.coelho.7564129" target="_blank"><i class="fab fa-facebook"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/lucas-nathan-760944229/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+  </ul>
+</footer> 
+
+</body> 
+</html>
