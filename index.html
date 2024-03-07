@@ -42,7 +42,7 @@
     header {
       background-color: rgba(0, 0, 0, 0.95);
       backdrop-filter: blur(2px);
-      width: 97%;
+      width: 100%;
       color: white;
       text-align: center;
       padding: 20px; 
@@ -99,7 +99,7 @@ section {
     footer {
       background-color: rgba(0, 0, 0, 0.95);
       backdrop-filter: blur(2px);
-      width: 97%;
+      width: 100%;
       color: white;
       text-align: center;
       padding: 20px; 
@@ -253,7 +253,7 @@ section {
   function showImage(imageUrl) {
     var img = new Image();
     img.src = imageUrl;
-    img.style.maxWidth = '100%';
+    img.style.maxWidth = 'auto';
     img.style.height = 'auto';
     document.body.appendChild(img);
   }
