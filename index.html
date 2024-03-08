@@ -23,7 +23,7 @@
       backdrop-filter: blur(10px);
       color: white;
       text-align: center;
-      padding: 15px 0 5px;
+      padding: 20px 0 3px;
       width: 100%;
     }
 
@@ -47,23 +47,40 @@ section {
       margin: 10px;
       box-sizing: border-box;
       cursor: pointer;
+      border-radius: 30px;
     }
 
-    .container {
-      text-align: center;
-    }
+.container {
+  text-align: center;
+  margin-top: 40px; /* Ajuste o valor conforme desejado para aumentar o afastamento */
+  margin-bottom: 28px;
+}
 
-   .green-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 16px 43px; 
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-   border-radius: 50px;
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.green-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 43px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  animation: pulse 0.9s linear infinite; /* ajuste a duração e a velocidade conforme desejado */
+  margin-bottom: 30px;
 }
 
   </style>
@@ -210,7 +227,7 @@ background-color: rgba(0, 0, 0, 0.51);  backdrop-filter: blur(10px);
   <p>Desenvolvido por Lucas Nathan</p>
   <ul>
     <li><a href="https://wa.me/557192920032" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-    <li><a href="https://www.instagram.com/071lkz/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="https://www.instagram.com/lukdev_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
     <li><a href="https://www.facebook.com/lucas.coelho.7564129" target="_blank"><i class="fab fa-facebook"></i></a></li>
     <li><a href="https://www.linkedin.com/in/lucas-nathan-760944229/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
   </ul>
